@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <link rel="stylesheet" href="syyle.css">
+    </head>
+    <body> 
+        <div class="input">
+            <h1 id="output-screen" class="input1"></h1>
+            <h1 id="result" class="input2"></h1>
+        </div>
+        
+        <div class="allrow">
+        <div class="row">
+        <button class="zero" value="sqrt(" id="one0" onclick="output(event)">√</button>
+        <button class="zero" value="π" class="two" id="two0" onclick="output(event)">π</button>
+        <button class="zero" value="**" id="three0" onclick="output(event)">^</button>
+        <button class="zero" value="AC" id="four0" onclick="clean(event)">AC</button>
+        </div>
+        <div class="rowone"></div>
+            <button class="one" value="%" id="one" onclick="output(event)">
+               %
+            </button>
+            <button class="one" value="(" id="two" onclick="output(event)">
+              (
+            </button>
+            <button class="one" value=")" id="three" onclick="output(event)">
+             )
+            </button>
+            <button class="one" value="&#9003;" id="four" onclick="delet()">
+                &#9003;
+            </button>
+        
+        <div class="rowtwo">
+            <button class="two" value="7" id="one1" class="two" onclick="output(event)">
+                7
+            </button>
+            <button class="two" value="8" id="two1" onclick="output(event)">
+               8
+            </button>
+            <button class="two" value="9" id="three1" onclick="output(event)">
+                9
+            </button>
+            <button class="two" value="÷" id="four1" onclick="output(event)">
+                ÷
+            </button>
+        </div>
+        <div class="rowthree">
+            <button class="three" value="4" id="one2" onclick="output(event)">
+                 4
+            </button>
+            <button class="three" value="5" id="two2" onclick="output(event)">
+                 5
+            </button>
+            <button class="three" value="6" id="three2" onclick="output(event)">
+                 6
+            </button>
+            <button class="three" value="*" id="four2" onclick="output(event)">
+               ×
+            </button>
+        </div>
+        <div class="rowfour">
+            <button class="four" value="1" id="one3" onclick="output(event)">
+                1
+            </button>
+            <button class="four" value="2" id="two3" onclick="output(event)">
+                2
+            </button>
+            <button class="four" value="3" id="three3" onclick="output(event)">
+                3
+            </button>
+            <button class="four" value="-" id="four3" onclick="output(event)">
+                -
+            </button>
+        </div>
+        <div class="rowfive">
+            <button class="five" value="0" id="one4" onclick="output(event)">
+             0
+            </button>
+            <button class="five" value="." id="two4" onclick="output(event)">
+                .
+            </button>
+            <button class="five" value="=" id="three4" onclick="calaulator()">
+                =
+            </button>
+            <button class="five" value="+" id="five4" onclick="output(event)">
+                +
+            </button>
+        </div>
+        </div>
+        <script src="calculator.js">
+            var π=Math.PI
+        </script>
+
+
+
+    </body>
+</html>
